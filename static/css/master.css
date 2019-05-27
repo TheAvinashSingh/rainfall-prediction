@@ -1,0 +1,41 @@
+.city-select {
+  border: 2px solid purple;
+  color: purple;
+  font-weight: bold;
+}
+.city {
+  padding: 0 3.5rem !important;
+}
+
+.month{
+  padding: 0 3.5rem !important;
+}
+
+.year {
+  padding: 0 4rem !important;
+}
+
+.harvest-img {
+  width:30vw;
+}
+
+.harvest-row > div > h4 {
+  text-align: justify;
+}
+
+.harvest-main > div > h2 {
+  font-weight: bold;
+  margin: auto;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.harvest-adv > h3 {
+  font-weight: bold;
+  margin: auto;
+  text-transform: capitalize;
+}
+
+.harvest-adv > h4 {
+  text-align: justify;
+}

@@ -1,0 +1,180 @@
+<!-- Theme Color #9c27b0 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+      Rainfall Prediction System
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
+    <link href="{{url_for('static', filename='css/material.css')}}" rel="stylesheet" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/hover.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/master.css')}}" type="text/css">
+  </head>
+  <body class="sidebar-sollapse index-page">
+    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="javascript(void:0)">
+            Rainfall Prediction System </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link hvr-sweep-to-right" href="localhost:5000/harvesting" onclick="scrollToDownload()">
+                Rainwater Harvesting
+              </a>
+            </li>
+            <li class="nav-item hvr-sweep-to-right">
+              <a class="nav-link" href="#" onclick="scrollToDownload()">
+                Uttarakhand
+              </a>
+            </li>
+            <li class="nav-item hvr-sweep-to-right">
+              <a class="nav-link" href="#" onclick="scrollToDownload()">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('./static/image/bg2.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <div class="brand">
+              <h1>RAINFALL PREDICTION SYSTEM</h1>
+              <h3 style="color:purple;background-color:#fff;padding:1px;">Rainfall Prediction for Uttarakhand</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main main-raised">
+      <div class="section section-basic">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+              <h2><strong>Predict Rainfall for Uttarakhand<strong></h2>
+              <h4>This system is especially designed for Uttarakhand so that you can predict the weather of Uttarakhand for any upcoming years at your fingertips. The data is taken from the IndiaWaterPortal which is then cleaned and processed to give you much better results.</h4>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+              <h2 style="color:purple;margin-bottom:1vw;">PREDICT HERE</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <form action="/home" method="post" name="form1">
+          <div class="row">
+            <div class="col-md-3 ml-auto mr-auto text-center">
+              <div class="form-group">
+                <select class="city-select city" name="SelectCity">
+                  <option value="" selected disabled>Select City</option>
+                  <option value="Almora">Almora</option>
+                  <option value="Bageshwar">Bageshwar</option>
+                  <option value="Chamoli">Chamoli</option>
+                  <option value="Champawat">Champawat</option>
+                  <option value="Dehradun">Dehradun</option>
+                  <option value="Garhwal">Garhwal</option>
+                  <option value="Haridwar">Haridwar</option>
+                  <option value="Nainital">Nainitial</option>
+                  <option value="Pithoragarh">Pithoragarh</option>
+                  <option value="Rudraprayag">Rudraprayag</option>
+                  <option value="Tehri Garhwal">TehriGarhwal</option>
+                  <option value="Udham Singh Nagar">USN</option>
+                  <option value="Uttarkashi">Uttarkashi</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 ml-auto mr-auto text-center">
+              <div class="form-group">
+                <select class="city-select month" name="SelectMonth">
+                  <option value="" selected disabled>Select Month</option>
+                  <option value="jan">January</option>
+                  <option value="feb">February</option>
+                  <option value="mar">March</option>
+                  <option value="apr">April</option>
+                  <option value="may">May</option>
+                  <option value="jun">June</option>
+                  <option value="jul">July</option>
+                  <option value="aug">August</option>
+                  <option value="sep">September</option>
+                  <option value="oct">October</option>
+                  <option value="nov">November</option>
+                  <option value="dec">December</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 ml-auto mr-auto text-center">
+              <div class="form-group">
+                <button class="btn btn-primary" type="submit">PREDICT</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-md-4 ml-auto mr-auto text-center"></div>
+          <div class="col-md-4 ml-auto mr-auto text-center">
+            <h3>City: {{city}}</h3>
+            <h3>Month: {{month}}</h3>
+            <h3>Predicted: {{predicted}}mm</h3>
+          </div>
+          <div class="col-md-4 ml-auto mr-auto text-center"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--   Core JS Files   -->
+    <script src="{{url_for('static', filename='js/core/jquery.min.js')}}" type="text/javascript"></script>
+    <script src="{{url_for('static', filename='js/core/popper.min.js')}}" type="text/javascript"></script>
+    <script src="{{url_for('static', filename='js/core/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
+    <script src="{{url_for('static', filename='js/plugins/moment.min.js')}}"></script>
+    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script src="{{url_for('static', filename='js/plugins/bootstrap-datetimepicker.js')}}" type="text/javascript"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="{{url_for('static', filename='js/plugins/nouislider.min.js')}}" type="text/javascript"></script>
+    <!--  Google Maps Plugin    -->
+    <script src="url_for('static', filename='js/material-kit.js?v=2.0.5')" type="text/javascript"></script>
+    <script>
+      $(document).ready(function() {
+        //init DateTimePickers
+        materialKit.initFormExtendedDatetimepickers();
+
+        // Sliders Init
+        materialKit.initSliders();
+      });
+
+
+      function scrollToDownload() {
+        if ($('.section-download').length != 0) {
+          $("html, body").animate({
+            scrollTop: $('.section-download').offset().top
+          }, 1000);
+        }
+      }
+    </script>
+  </body>
+</html>
