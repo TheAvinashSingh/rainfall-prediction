@@ -37,6 +37,6 @@ def predictor(city='Almora', time=2):
         predictions.append(yhat)
         obs = test[i]
         history.append(obs)
-    return yhat
+    return str(yhat)[:6]
     mse = mean_squared_error(test,predictions)
     rmse = sqrt(mse)

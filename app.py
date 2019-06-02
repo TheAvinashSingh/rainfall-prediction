@@ -18,7 +18,7 @@ def index():
     if request.method == 'POST':
         city = request.form['SelectCity']
         month = request.form['SelectMonth']
-        predicted = predictor(city, mon[month])
+        predicted = predictor(city, mon[month]) + "mm"
         #Main Code Here
 
         #Code Ends Here
